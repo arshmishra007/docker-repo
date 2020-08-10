@@ -1,0 +1,12 @@
+import cgi
+import subprocess
+print("content-type: text/html")
+print()
+mydata=cgi.FieldStorage()
+myx=mydata.getvalue("x")
+cmd1="sudo cd /etc/yum.repos.d"
+output1=subprocess.getoutput(cmd1)
+cmd2="sudo cp docker {}.repo".format(myx)
+output2=subprocess.getoutput(cmd2)
+print(output1)
+print(output2)

@@ -1,0 +1,4 @@
+[docker]
+name='DOCKERCE'
+description='ONLINE REPO FOR DOCKER-CE'
+baseurl=https://download.docker.com/linux/centos/7/x86_64/stable/
